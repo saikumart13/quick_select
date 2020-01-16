@@ -29,9 +29,12 @@ def select(li,l,r,k):
             l = pi+1
         # print(li,'sel')
 
-a = [3,45,67,25,437,89,6,0]
+#a = [3,45,67,25,437,89,6,0]
 # a = [1,2,3]
-print(select(a,0,len(a)-1,5))
+a = list(int(n) for n in input('Enter a set of distinct numbers').split())
 print(a)
-print(sorted(a))
+k = int(input('Enter the nth highest to print'))
+print(select(a,0,len(a)-1,k-1))
+#print(sorted(a))
+input()
 
